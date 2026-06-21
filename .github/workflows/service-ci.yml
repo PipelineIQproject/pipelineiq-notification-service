@@ -1,0 +1,23 @@
+name: Service CI/CD
+
+on:
+  push:
+    branches:
+      - dev
+      - master
+  workflow_dispatch:
+
+jobs:
+  service:
+    uses: PipelineIQproject/pipeline_main/.github/workflows/reusable-node-service-ci.yml@dev
+    with:
+      service_name: notification-service
+      image_name: final_capstone-notification-service
+      dockerfile: services/notification-service/Dockerfile
+      node_project_dir: services/notification-service
+      chart_path: notification-service
+      container_port: "8080"
+      smoke_mode: container
+      sonar_organization: pipelineiqproject
+      sonar_project_key: pipelineiq-notification-service
+    secrets: inherit
