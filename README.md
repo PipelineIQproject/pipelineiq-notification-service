@@ -14,7 +14,7 @@ This service expects PipelineIQ environment variables from Kubernetes ConfigMap 
 
 ```bash
 cd services/notification-service
-npm install
+npm install 
 DATABASE_URL=<postgres-url> RABBITMQ_URL=<rabbitmq-url> npm start
 ```
 
