@@ -2,7 +2,7 @@
 
 Independent repository for the PipelineIQ notification worker.
 
-## Build
+## Build 
  
 ```bash
 docker build -t <acr-login-server>/final_capstone-notification-service:local -f services/notification-service/Dockerfile .
