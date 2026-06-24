@@ -1,4 +1,4 @@
-# PipelineIQ Notification Service
+ # PipelineIQ Notification Service
 
 Independent repository for the PipelineIQ notification worker.
 
